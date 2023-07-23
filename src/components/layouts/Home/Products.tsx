@@ -6,13 +6,13 @@ import { cardsData } from "@/utils/data/homeData";
 const Products = () => {
   return (
     <Section>
-      <div className="flex justify-between items-end">
+      <div className="flex justify-between items-center lg:items-end">
         <SectionTitle title="Products" />
         <Typography
           as="a"
           href="/products"
           color="deep-orange"
-          className="mt-3 text-md text-xl font-bold"
+          className="text-md text-xl font-bold"
         >
           Explore All
         </Typography>

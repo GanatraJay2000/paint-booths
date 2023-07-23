@@ -45,7 +45,6 @@ export default function StickyNavbar() {
             <Typography
               key={index}
               as="li"
-              variant="small"
               color="blue-gray"
               className="p-1 font-normal"
             >
@@ -81,7 +80,6 @@ export default function StickyNavbar() {
               return (
                 <a href={page.link} key={index}>
                   <Button
-                    size="sm"
                     color="deep-orange"
                     className="hidden lg:inline-block shadow-none hover:-translate-x-1 hover:-translate-y-1 hover:shadow-mixShadow"
                   >

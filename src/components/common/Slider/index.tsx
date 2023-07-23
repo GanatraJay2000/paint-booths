@@ -71,16 +71,24 @@ const Slider = ({ data }: SliderProps) => {
 
   return (
     <>
-      <div ref={sliderRef} className="fader relative h-[650px] ">
+      {/* <div
+        ref={sliderRef}
+        className="mt-10 lg:mt-0  fader relative h-[650px] overflow-hidden"
+      > */}
+      <div
+        ref={sliderRef}
+        className="mt-10 lg:mt-0 keen-slider relative h-[650px] overflow-hidden"
+      >
         {data.map((item, index) => {
           return (
             <div
               key={index}
-              className="fader__slide absolute"
+              // className="fader__slide absolute"
+              className="keen-slider__slide"
               style={{ opacity: opacities[item.index] }}
             >
-              <div className="h-[650px] m-1 p-10 flex items-center">
-                <div className="w-6/12 block z-10 -translate-x-10 ">
+              <div className="lg:h-[650px] m-1 px-1 lg:p-10 flex flex-col-reverse lg:flex-row items-center">
+                <div className="w-full lg:w-6/12 block z-10  ">
                   <Card className="mt-5 shadow-xl ">
                     <CardBody>
                       <Typography
@@ -111,12 +119,12 @@ const Slider = ({ data }: SliderProps) => {
                     noOfSlides={data.length}
                   />
                 </div>
-                <div className="w-6/12">
+                <div className="lg:w-6/12">
                   <div className="">
                     <Image
                       src={item.image}
                       alt="Spray Booth"
-                      className="scale-125 z-0"
+                      className="lg:scale-125 z-0"
                       width={3000}
                       height={3000}
                     />

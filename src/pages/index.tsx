@@ -12,7 +12,7 @@ export default function Home() {
       <Booths />
       <div className="pb-16"></div>
       <Contact />
-      <div className="pb-16 sm:pb-20 md:pb-32 lg:pb-40"></div>
+      <div className="pb-20 md:pb-32 lg:pb-40"></div>
     </div>
   );
 }

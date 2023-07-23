@@ -15,7 +15,7 @@ export const PrevArrow = ({ handlePrev }: PrevArrowProps) => (
     color="white"
     size="lg"
     onClick={handlePrev}
-    className="!absolute bottom-6 right-20 rounded-none bg-white text-gray-600 hover:text-white"
+    className="!absolute bottom-6 left-1/4 lg:left-auto -translate-x-2/4 lg:translate-x-0 lg:right-20 rounded-none lg:bg-white lg:text-gray-600 hover:text-white"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ export const NextArrow = ({ handleNext }: NextArrowProps) => (
     color="white"
     size="lg"
     onClick={handleNext}
-    className="!absolute bottom-6 !right-6 rounded-none bg-white text-gray-600 hover:text-white"
+    className="!absolute bottom-6 left-3/4 -translate-x-2/4 lg:left-auto lg:translate-x-0 lg:right-6 rounded-none lg:bg-white lg:text-gray-600 hover:text-white"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -13,7 +13,7 @@ export const SectionTitle = ({ title }: SectionTitleProps) => {
     <Typography
       variant="h1"
       color="deep-orange"
-      className="mb-4 text-3xl md:text-4xl lg:text-5xl lg:font-extrabold"
+      className="lg:mb-4 text-3xl md:text-4xl lg:text-5xl lg:font-extrabold"
     >
       {title}
     </Typography>
@@ -23,7 +23,7 @@ export const SectionTitle = ({ title }: SectionTitleProps) => {
 const Section = ({ children, className }: SectionProps) => {
   return (
     <div
-      className={`${className} mt-16 md:mt-20 lg:mt-24 xl:mt-32 text-center lg:text-left lg:w-11/12 xl:w-10/12 2xl:w-9/12 mx-auto`}
+      className={`${className} mt-16 md:mt-20 lg:mt-24 xl:mt-32 text-center lg:text-left px-5 lg:px-0 lg:w-11/12 xl:w-10/12 2xl:w-9/12 mx-auto`}
     >
       {children}
     </div>

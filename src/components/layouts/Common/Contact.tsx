@@ -8,11 +8,11 @@ const Contact = () => {
       <Typography
         as="h1"
         color="deep-orange"
-        className="mt-3 text-md text-5xl font-extrabold text-center mb-7"
+        className="mt-3 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center mb-7"
       >
         Looking for a painting solution?
       </Typography>
-      <Typography className="mt-3 text-md text-xl text-center w-4/6 mx-auto mb-7">
+      <Typography className="mt-3 text-md md:text-md lg:text-xl text-center lg:w-4/6 mx-auto mb-7">
         Lorem ipsum dolor sit amet consectetur. Interdum volutpat varius tellus
         dolor quis sagittis sed. Imperdiet viverra tempor nisi augue
         consectetur. Gravida risus est eget urna diam ultricies libero. Mattis
