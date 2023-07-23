@@ -19,7 +19,7 @@ export const CarouselItem = ({
   button,
   buttonLink,
 }: carouselItemProps) => {
-  const height = "h-[500px] lg:h-[600px] xl:h-[650px]";
+  const height = "h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px]";
 
   return (
     <div key={index} className={`relative ${height} w-full`}>
@@ -31,15 +31,19 @@ export const CarouselItem = ({
         height={500}
       />
       <div className="absolute inset-0 h-full w-full bg-black/75">
-        <div className="m-8 sm:16 md:m-24 lg:m-32 text-left">
+        <div className="m-8 sm:16 md:m-24 text-left">
           <Typography
             variant="h1"
             color="white"
-            className="mb-4 text-3xl md:text-4xl lg:text-8xl"
+            className="mb-4 text-3xl md:text-4xl lg:text-7xl"
           >
             {title}
           </Typography>
-          <Typography variant="lead" color="white" className="mb-12 opacity-80">
+          <Typography
+            variant="lead"
+            color="white"
+            className="mb-12 opacity-80 w-10/12"
+          >
             {description}
           </Typography>
           <div className="flex gap-2">
