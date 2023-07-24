@@ -1,3 +1,18 @@
+import Contact from "@/components/layouts/Common/Contact";
+import Section, { SectionTitle } from "@/components/layouts/Common/Section";
+import { ProductTabs } from "@/components/layouts/Products/Tabs";
+
 export default function Products() {
-  return <div>Products</div>;
+  return (
+    <>
+      <Section className="!mt-16">
+        <SectionTitle title="Products" />
+        <div className="pb-6"></div>
+        <ProductTabs />
+      </Section>
+      <div className="pb-16"></div>
+      <Contact />
+      <div className="pb-24"></div>
+    </>
+  );
 }

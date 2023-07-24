@@ -49,9 +49,11 @@ export const CarouselItem = ({
           <div className="flex gap-2">
             <a href={buttonLink}>
               <Button
-                className="text-deep-orange-500 px-12 transition-all hover:-translate-x-1 hover:-translate-y-1 hover:shadow-orangeShadow"
+                // className="text-deep-orange-500 px-12 transition-all hover:-translate-x-1 hover:-translate-y-1 hover:shadow-orangeShadow"
+                className="bg-white hover:bg-white text-deep-orange-500 shadow-orangeShadow px-12 !outline-0 !focus:outline-0"
                 size="lg"
-                color="white"
+                color="deep-orange"
+                variant="outlined"
               >
                 {button}
               </Button>

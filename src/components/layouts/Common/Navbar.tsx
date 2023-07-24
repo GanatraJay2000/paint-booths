@@ -61,7 +61,7 @@ export default function StickyNavbar() {
     <Navbar
       className={`${
         sticky && "sticky"
-      } top-0 z-20 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4`}
+      } top-0 z-40 h-max max-w-full rounded-none py-2 px-4 lg:px-8 lg:py-4`}
     >
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography

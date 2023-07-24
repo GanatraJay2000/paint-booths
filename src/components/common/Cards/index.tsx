@@ -8,15 +8,23 @@ import {
 } from "@material-tailwind/react";
 import { BsArrowRight } from "react-icons/bs";
 import Image from "next/image";
+import Link from "next/link";
 
 type CardProps = {
   image: string;
   title: string;
   description: string;
   link: string;
+  anchors?: boolean;
 };
 
-export function CardsItem({ image, title, description, link }: CardProps) {
+export function CardsItem({
+  image,
+  title,
+  description,
+  link,
+  anchors = false,
+}: CardProps) {
   return (
     <Card className="basis-1/3 max-w-[24rem] overflow-hidden shadow-orangeShadow border border-deep-orange-500 transition-all">
       <CardHeader
@@ -25,18 +33,38 @@ export function CardsItem({ image, title, description, link }: CardProps) {
         color="transparent"
         className="m-0 rounded-none"
       >
-        <Image
-          src={image}
-          alt={title}
-          className="h-60 object-cover"
-          width={3000}
-          height={5000}
-        />
+        {anchors == true ? (
+          <Link href={link}>
+            <Image
+              src={image}
+              alt={title}
+              className="h-60 object-cover"
+              width={3000}
+              height={5000}
+            />
+          </Link>
+        ) : (
+          <Image
+            src={image}
+            alt={title}
+            className="h-60 object-cover"
+            width={3000}
+            height={5000}
+          />
+        )}
       </CardHeader>
       <CardBody>
-        <Typography variant="h4" color="blue-gray">
-          {title}
-        </Typography>
+        {anchors == true ? (
+          <a href={link}>
+            <Typography variant="h4" color="blue-gray">
+              {title}
+            </Typography>
+          </a>
+        ) : (
+          <Typography variant="h4" color="blue-gray">
+            {title}
+          </Typography>
+        )}
         <Typography
           variant="lead"
           color="gray"
