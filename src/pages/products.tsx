@@ -6,8 +6,8 @@ export default function Products() {
   return (
     <>
       <Section className="!mt-16">
-        <SectionTitle title="Products" />
-        <div className="pb-6"></div>
+        <SectionTitle title="Products" className="text-center" />
+        <div className="pb-6">{process.env.DB_HOST}</div>
         <ProductTabs />
       </Section>
       <div className="pb-16"></div>

@@ -6,14 +6,15 @@ type SectionProps = {
 };
 type SectionTitleProps = {
   title: string;
+  className?: string;
 };
 
-export const SectionTitle = ({ title }: SectionTitleProps) => {
+export const SectionTitle = ({ title, className }: SectionTitleProps) => {
   return (
     <Typography
       variant="h1"
       color="deep-orange"
-      className="lg:mb-4 text-3xl md:text-4xl lg:text-5xl lg:font-extrabold"
+      className={`${className} lg:mb-4 text-3xl md:text-4xl lg:text-5xl lg:font-extrabold`}
     >
       {title}
     </Typography>

@@ -4,8 +4,10 @@ import { FiPhoneCall } from "react-icons/fi";
 function Left({ className }: { className: string }) {
   return (
     <div className={`${className}`}>
-      <p className="text-deep-orange-500 font-semibold text-xl">Contact</p>
-      <p className="font-bold text-6xl mb-5">
+      <p className="text-left text-deep-orange-500 font-semibold text-xl">
+        Contact
+      </p>
+      <p className="text-left font-bold text-6xl mb-5">
         Looking to find great equipments?
       </p>
       <p className="text-xl">
@@ -13,7 +15,7 @@ function Left({ className }: { className: string }) {
         adipisicing elit. exercitationem illo saepe iste sunt excepturi
         accusamus laborum molestias?
       </p>
-      <div className="flex flex-col items-center lg:items-start">
+      <div className="flex flex-col items-start">
         <div className="flex items-top gap-4 mt-10">
           <IoChatbubblesOutline className="text-3xl mt-2 text-deep-orange-500" />
           <div className="text-left">
